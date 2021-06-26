@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta Tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title></title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="__assets/lib/@bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__assets/lib/@icon-bootstrap/bootstrap-icons.css">
+    <link rel="stylesheet" href="__assets/css/app.css">
+
+</head>
+<body>
+
+
+    <div class="project-wrapper container">
+
+        <!-- Project Header -->
+        <div class="header mb-5">Javascript On Board Todo List</div>
+
+        <!-- Project Main Section -->
+        <div class="row g-4 mb-5">
+            <div class="col-lg-3 col-6 mb-2">
+                <h6 class="text-center list-title new mb-4">New Task</h6>
+                <div class="task-list" id="new-task" data-status="1">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6 mb-2">
+                <h6 class="text-center list-title in-progress mb-4">In Progress</h6>
+                <div class="task-list" id="in-progress-task" data-status="2">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6 mb-2">
+                <h6 class="text-center list-title complete mb-4">Complete</h6>
+                <div class="task-list" id="complete-task" data-status="3">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6 mb-2">
+                <h6 class="text-center list-title add mb-4">Add New Task</h6>
+                <form id="submit" method="post">
+                    <div class="mb-3">
+                        <textarea class="form-control" id="task" placeholder="Task Title" rows="3"></textarea>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary" type="submit">Add Task</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Project Footer -->
+        <div class="footer d-flex justify-content-between">
+            <span>MD Imam Hossain</span>
+            <a href="https://github.com/mdimamhossain0049">GitHub</a>
+        </div>
+        
+    </div>
+    
+
+    <!-- External JS File -->
+    <script src="__assets/lib/@jquery/jquery.js"></script>
+    <script src="__assets/lib/@bootstrap/js/bootstrap.min.js"></script>
+    <script src="__assets/js/app.js"></script>
+
+    <script>
+        // Script Code Here
+    </script>
+    
+</body>
+</html>
